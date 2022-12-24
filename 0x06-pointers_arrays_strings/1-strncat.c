@@ -4,25 +4,26 @@
  * _strncat - joins two strings with n bytes
  * @dest: copy to
  * @src: copy from
- * @n: number of char to be copied
+ * @n: input value
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int j;
+	int i = n;
+	int j = n;
 
-	n = 0;
-	while (dest[n] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		n++;
+		i++;
 	}
 	j = 0;
 	while (src[j] != '\0')
 	{
-		dest[n] = src[j];
-		n++;
+		dest[i] = src[j];
+		i++;
 		j++;
 	}
-	dest[n] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
