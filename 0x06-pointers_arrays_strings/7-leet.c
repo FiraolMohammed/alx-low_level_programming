@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * leet - function that encode a string
- * @str: string that will be encoded.
- * Return: returns encoded string.
+ * leet - Function that encode a string
+ * @str: String that will be encoded.
+ * Return: Returns encoded string.
  */
 char *leet(char *str)
 {
